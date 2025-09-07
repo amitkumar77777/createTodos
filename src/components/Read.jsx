@@ -5,7 +5,7 @@ const Read = (props) => {
     const settodo=props.settodo;
    
      const rendertodos = todo.map((todo) => {
-        return <li key={todo.id}>{todo.title} <span  onClick={()=>{deletehandler(todo.id)}}
+        return <li className='bg-gray-800 mb-4 flex justify-between items-center text-center  p-2 text-3xl w-100' key={todo.id}>{todo.title} <span  onClick={()=>{deletehandler(todo.id)}}
         className='text-red-500 text-sm cursor-pointer'>|Delete</span></li>
     })
     const deletehandler=(id)=>{
