@@ -7,7 +7,7 @@ import { toast } from 'react-toastify'
 const App = () => {
   const [todo, settodo] = useState([
     {
-      id: 1, title:"", iscompleted: false,
+      id: 1, title:"Go home🏠 ", iscompleted: false,
     },
   ])
   const deleteall = (e) => {
