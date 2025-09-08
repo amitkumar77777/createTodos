@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { toast } from 'react-toastify';
 const Read = (props) => {
         const todo=props.todo;
     const settodo=props.settodo;
@@ -11,6 +11,7 @@ const Read = (props) => {
     const deletehandler=(id)=>{
         const filtertodo=todo.filter((todo)=>todo.id != id);
         settodo(filtertodo)
+        toast.error("Tasks Deleted!" )
     }
 
   return (

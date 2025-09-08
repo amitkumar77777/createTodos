@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { small } from 'framer-motion/client';
+import { toast } from 'react-toastify';
 
 
 const Create = (props) => {
@@ -37,6 +38,7 @@ const Create = (props) => {
         copytodos.push(data);
         settodo(copytodos);
         reset();
+        toast.success("Task Added Successfully!")
     }
     return (
         <div className='w-[70%]'>
